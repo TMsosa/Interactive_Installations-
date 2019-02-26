@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 272.0, 100.0, 150.0, 20.0 ],
+					"patching_rect" : [ 272.0, 28.0, 150.0, 20.0 ],
 					"text" : "message input for poly "
 				}
 
@@ -103,7 +103,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 433.0, 110.0, 31.0, 22.0 ],
+					"patching_rect" : [ 403.5, 91.0, 31.0, 22.0 ],
 					"text" : "t b s"
 				}
 
@@ -128,10 +128,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 245.0, 67.0, 28.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "in 1"
 				}
 
@@ -144,7 +140,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 73.0, 153.0, 29.5, 22.0 ],
-					"text" : "- 1"
+					"text" : "-1"
 				}
 
 			}
@@ -167,7 +163,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 161.0, 275.0, 48.0, 22.0 ],
+					"patching_rect" : [ 189.0, 234.0, 48.0, 22.0 ],
 					"text" : "loop $1"
 				}
 
@@ -180,7 +176,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 144.0, 180.0, 24.0, 24.0 ]
+					"patching_rect" : [ 64.0, 218.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -232,8 +228,8 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 616.533333333332621, "ticks" ],
-						"originaltempo" : 119.999999999999844,
+						"originallength" : [ 2730.97142857142444, "ticks" ],
+						"originaltempo" : 119.999999999999829,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
 						"timestretch" : [ 0 ]
@@ -258,7 +254,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-50",
-					"items" : [ "Macintosh HD:/Applications/Max.app/Contents/Resources/C74/media/msp/cello-f2.aif", ",", "Macintosh HD:/Applications/Max.app/Contents/Resources/C74/packages/MaxIntroLessons/media/Clap 01.wav", ",", "Macintosh HD:/Applications/Max.app/Contents/Resources/C74/docs/tutorial-patchers/msp-tut/epno.aiff", ",", "Macintosh HD:/Applications/Max.app/Contents/Resources/C74/packages/MaxIntroLessons/media/Kick 01.wav" ],
+					"items" : [ "Macintosh HD:/Applications/Max.app/Contents/Resources/C74/media/msp/cherokee.aif", ",", "Macintosh HD:/Applications/Max.app/Contents/Resources/C74/packages/max-mxj/examples/social.aif", ",", "Macintosh HD:/Applications/Max.app/Contents/Resources/C74/docs/tutorial-patchers/msp-tut/sacre.aiff", ",", "Macintosh HD:/Applications/Max.app/Contents/Resources/C74/media/msp/sho0630.aif", ",", "Macintosh HD:/Applications/Max.app/Contents/Resources/C74/packages/BEAP/misc/vector2.256.rom.aif" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -292,7 +288,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
+					"destination" : [ "obj-48", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 313.0, 152.0, 880.0, 550.0 ],
+		"rect" : [ 409.0, 120.0, 880.0, 550.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 428.0, 137.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-32",
 					"linecount" : 3,
@@ -102,7 +114,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 145.0, 132.0, 150.0, 47.0 ],
+					"patching_rect" : [ 145.0, 132.0, 151.0, 47.0 ],
 					"text" : "goes through the rows and columns depending on the speed set by metro "
 				}
 
@@ -987,10 +999,17 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "thePoly.maxpat",
-				"bootpath" : "~/Desktop",
+				"bootpath" : "~/Documents/Interactive_Installations/Max_Puzzles/Week_2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
