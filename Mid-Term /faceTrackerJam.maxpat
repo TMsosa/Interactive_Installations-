@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 199.0, 79.0, 1084.0, 783.0 ],
+		"rect" : [ 199.0, 79.0, 1084.0, 850.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,183 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-95",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1376.0001220703125, 552.0, 150.0, 20.0 ],
+					"text" : "audio control system "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-88",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1103.0, 246.0, 150.0, 60.0 ],
+					"text" : "counter and selector to switch betweeen the 2 faces and 2 audio tracks associated with them"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-96",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1118.0, 822.0, 150.0, 33.0 ],
+					"text" : "toggle to turn dac on and off "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-93",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1126.0, 167.0, 150.0, 47.0 ],
+					"text" : "load bang to trigger audio and video when patch is loaded "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-89",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 589.4000244140625, 506.0, 150.0, 20.0 ],
+					"text" : "you can do up to 3 faces "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 912.0, 940.0, 150.0, 74.0 ],
+					"text" : "repacks the list to what the final video will show and puts my selection of video where the tracking box is supposed to be "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-108",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 72.0, 681.0, 150.0, 60.0 ],
+					"text" : " unpacking the list and finding the middle point of the bounding box from cv.jit.faces "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 201.0, 572.0, 150.0, 60.0 ],
+					"text" : "Taking the matrices and turning them into a list in order to work with them easier "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 368.0, 365.0, 150.0, 20.0 ],
+					"text" : "From jit.opencv libray "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 695.0, 279.0, 150.0, 87.0 ],
+					"text" : "removing the depth and resizing the video coming in to make it easier to work with since I'm only dealing with x and y we ignore the z "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-94",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 554.0, 151.0, 151.0, 33.0 ],
+					"text" : "loads jit.world the moment patcher is open "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-92",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 865.5, 6.0, 150.0, 60.0 ],
+					"text" : "gets and list different video devices connected and sets them to be selected by jit.grab "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-90",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 491.0, 230.0, 150.0, 87.0 ],
+					"text" : "using jit.world instead of pwindow to display video. jit.world utilizes gpu and you get a seperate window displaying video not in the patcher "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-86",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 390.0, 6.0, 150.0, 74.0 ],
+					"text" : "this selects the video size using a small resolution minimizes prrocessing power and makes video easier to work with "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 262.0, 105.5, 150.0, 47.0 ],
+					"text" : "jit.grab to get the in built camera or external camera"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-65",
 					"maxclass" : "newobj",
@@ -562,7 +739,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 809.0, 812.0, 29.5, 22.0 ],
+					"patching_rect" : [ 705.5, 816.0, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -574,7 +751,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 821.0, 725.0, 58.0, 22.0 ],
+					"patching_rect" : [ 741.0, 789.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -804,7 +981,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 586.0, 245.0, 299.0, 22.0 ],
+					"patching_rect" : [ 714.0, 246.0, 299.0, 22.0 ],
 					"text" : "jit.gl.videoplane @transform_reset 2 @depth_enable 0"
 				}
 
@@ -2070,6 +2247,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
+					"midpoints" : [ 155.0, 211.0, 458.25, 211.0, 458.25, 60.0, 761.5, 60.0 ],
 					"source" : [ "obj-8", 1 ]
 				}
 
@@ -2137,7 +2315,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "cv.jit.faces.draw.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/cv.jit/patchers",
-				"patcherrelativepath" : "./Max 8/Packages/cv.jit/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/cv.jit/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
