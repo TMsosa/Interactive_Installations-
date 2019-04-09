@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 19.0, 98.0, 1387.0, 711.0 ],
+		"rect" : [ 34.0, 98.0, 1387.0, 711.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,29 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 344.0, 227.0, 150.0, 47.0 ],
+					"text" : "receive the 2 buffers and send them to a groove to be panned "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 70.0, 235.0, 150.0, 20.0 ],
+					"text" : "receive the buffer length "
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-84",
 					"linecount" : 2,
